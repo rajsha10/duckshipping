@@ -13,11 +13,21 @@ export default function ShipmentModal({
   });
 
   const createItem = async () => {
-    try {
-      await createShipment(shipment);
-      setCreateShipmentModel(false); // Close the modal after successful creation
-    } catch (error) {
-      console.error("Error creating shipment:", error);
+    if (
+      shipment.receiver &&
+      shipment.pickupTime &&
+      shipment.distance &&
+      shipment.price
+    ) {
+      try {
+        await createShipment(shipment);
+        setCreateShipmentModel(false);
+      } catch (error) {
+        console.error("Error creating shipment:", error);
+        alert("There was an error creating the shipment. Please try again.");
+      }
+    } else {
+      alert("Please fill in all fields.");
     }
   };
 

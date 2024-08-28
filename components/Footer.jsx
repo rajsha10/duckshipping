@@ -25,7 +25,7 @@ export default () => {
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="justify-between sm:flex">
           <div className="space-y-6">
-            <img src="/SVG/logo.jpg" className="w-32" alt="" />
+            <img src="/images/logo.jpg" className="w-32" alt="" />
             <p className="max-w-md">
               Lorem ipsum dolor sit amet consectetur adipisicing.
             </p>

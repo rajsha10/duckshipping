@@ -29,7 +29,7 @@ export default function Component({
   };
 
   return (
-    <section className="py-0 pb-14">
+    <section id="hero" className="py-0 pb-14">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
         <div className="mt-12">
           <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
@@ -37,15 +37,15 @@ export default function Component({
               <li key={i}>
                 <div
                   onClick={() => openModelBox(i + 1)}
-                  className="w-full h-60 sm:h-52 md:h-56"
+                  className="w-full h-50 sm:h-52 md:h-56"
                 >
                   <Image
                     src={item.avatar}
-                    className="w-full h-full object-cover object-center shadow-md rounded-xl"
+                    className="w-full h-full object-cover object-center rounded-xl"
                     alt=""
                     width={100}
-                    height={100} // Or you can use width and height attributes
-                    objectFit="cover"
+                    height={100}
+                    objectFit="fill"
                     objectPosition="center"
                   />
                 </div>

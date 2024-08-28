@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { DuckContext } from '@/context/Duck'
 import { Nav1, Nav2, Nav3 } from '.'
+import '../app/globals.css'
 
 
 export default () => {
@@ -22,11 +23,11 @@ export default () => {
   }, []);
 
   return(
-    <nav className={`bg-white pb-5 md:text-sm ${ state ? "shadow-lg rounded-xl border mx-2 mt-2 md:border-none md:mx-2 md:mt-0" : ""}`}>
+    <nav id='navv' className={`pb-5 md:text-sm ${ state ? "shadow-lg rounded-xl border mx-2 mt-2 md:border-none md:mx-2 md:mt-0" : ""}`}>
       <div className="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
         <div className="flex items-center justify-between py-5 md:block">
-          <a href="javascript:void(0)">
-            <img src="SVG/logo.jpg" width={120} height={50} alt="UI Logo" />
+          <a href="#">
+            <img src="/images/flogo.png" width={100} alt="UI Logo" />
           </a>
           <div className="md:hidden">
             <button className="menu-btn text-gray-500 hover:text-gray-800" onClick={() => setState(!state)}>
@@ -39,7 +40,7 @@ export default () => {
           <ul className="justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
             {navigation.map((item, idx) => {
               return(
-                <li key={idx} className="text-gray-700 hover:text-gray-900">
+                <li id='navMenu' key={idx} className="text-gray-700 hover:text-gray-900">
                   <a href={item.path} className="block">
                     {item.title}
                   </a>

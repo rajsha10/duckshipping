@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'Gamilia';
+    src: url('/fonts/GamiliaDemoRegular-d9DL7.ttf') format('truetype')
+}
+
+*{
+    font-family: 'Gamilia';
+}
+
+#navMenu{
+    font-size: 1.5rem;
+}
+
+button{
+    cursor:pointer
+}

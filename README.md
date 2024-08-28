@@ -22,9 +22,8 @@ DuckShips is a Web3-powered shipping platform designed to streamline and enhance
 
 ## Getting Started
 
-1. **Visit DuckShips.com:** Access the DuckShips platform through our website.
-2. **Create an Account:** Sign up and verify your account.
-3. **Start Shipping:** Use the platform to start, track, and complete your shipments.
+1. Visit Duck Ships and connect to your wallet through Metamask easily in one click..
+2. **Start Shipping:** Use the platform to start, track, and complete your shipments.
 
 ## Installation
 
@@ -73,13 +72,6 @@ We welcome contributions to DuckShips! To contribute:
 3. Commit your changes and push to your fork.
 4. Open a pull request with a description of your changes.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or support, please contact us at support@duckships.com.
 
 ---
 

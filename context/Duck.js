@@ -5,7 +5,7 @@ import Web3Modal from "web3modal";
 import { ethers } from "ethers";
 
 // INTERNAL IMPORT
-import duck from "../artifacts/contracts/Duck.sol/Duck.json";
+import duck from "./artifacts/contracts/Duck.sol/Duck.json";
 const ContractAddress = "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512";
 const ContractABI = duck.abi;
 
